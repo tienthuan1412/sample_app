@@ -1,0 +1,15 @@
+current directory: /Users/hyakuren/sample_app/vendor/bundle/ruby/2.3.0/gems/bootsnap-1.3.0/ext/bootsnap
+/Users/hyakuren/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20180604-29096-14ia4bh.rb extconf.rb
+creating Makefile
+
+current directory: /Users/hyakuren/sample_app/vendor/bundle/ruby/2.3.0/gems/bootsnap-1.3.0/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/hyakuren/sample_app/vendor/bundle/ruby/2.3.0/gems/bootsnap-1.3.0/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/hyakuren/sample_app/vendor/bundle/ruby/2.3.0/gems/bootsnap-1.3.0/ext/bootsnap
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20180604-29096-rnupom/bootsnap

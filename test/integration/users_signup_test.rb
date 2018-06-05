@@ -4,6 +4,10 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
+  def setup
+    ActionMailer::Base.deliveries.clear
+  end
+
   test "invalid signup information" do
     get signup_path
     assert_no_difference 'User.count' do
@@ -24,8 +28,8 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                          password_confirmation: "password" } }
     end
     follow_redirect!
-    assert_template 'users/show'
-    assert is_logged_in?
+    # assert_template 'users/show'
+    # assert is_logged_in?
   end
 
 end
